@@ -9,15 +9,15 @@ Each notebook has a Colab-aware setup cell at the top — run it first and it
 will `pip install` the deps on a fresh Colab runtime (and is a no-op when run
 locally).
 
-Replace `<USER>/<REPO>` and `<BRANCH>` below with the GitHub coordinates once
-this repo is pushed (e.g. `cioos-siooc/obis-presentation` on `main`):
+> **Note:** this repo is currently private. Colab badges only work for
+> users signed in to a GitHub account with access to `cioos-siooc/CPDW-VI`.
 
 | Notebook | Open in Colab |
 | --- | --- |
-| `01_pyobis_quickstart.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<USER>/<REPO>/blob/<BRANCH>/notebooks/01_pyobis_quickstart.ipynb) |
-| `02_obis_rest_api.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<USER>/<REPO>/blob/<BRANCH>/notebooks/02_obis_rest_api.ipynb) |
-| `03_obis_parquet_duckdb.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<USER>/<REPO>/blob/<BRANCH>/notebooks/03_obis_parquet_duckdb.ipynb) |
-| `04_obis_to_cioos_metadata.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<USER>/<REPO>/blob/<BRANCH>/notebooks/04_obis_to_cioos_metadata.ipynb) |
+| `01_pyobis_quickstart.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/notebooks/01_pyobis_quickstart.ipynb) |
+| `02_obis_rest_api.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/notebooks/02_obis_rest_api.ipynb) |
+| `03_obis_parquet_duckdb.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/notebooks/03_obis_parquet_duckdb.ipynb) |
+| `04_obis_to_cioos_metadata.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/notebooks/04_obis_to_cioos_metadata.ipynb) |
 
 Notebook 04 uses `cioos-metadata-conversion`, which is not on PyPI — its
 setup cell installs it from
