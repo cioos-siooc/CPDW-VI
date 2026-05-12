@@ -1,4 +1,4 @@
-name: Build docs
+name: Build and deploy docs
 
 on:
   push:
@@ -7,6 +7,15 @@ on:
       - add-mkdocs
   pull_request:
   workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -25,10 +34,19 @@ jobs:
             --with pymdown-extensions \
             mkdocs build --strict
 
-      - name: Upload site artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: cpdw-vi-site
-          path: site/
-          retention-days: 30
-          if-no-files-found: error
+          path: site
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/add-mkdocs'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
