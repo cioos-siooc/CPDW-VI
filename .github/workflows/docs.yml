@@ -2,7 +2,9 @@ name: Build docs
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - add-mkdocs
   pull_request:
   workflow_dispatch:
 
