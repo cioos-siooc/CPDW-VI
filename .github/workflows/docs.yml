@@ -1,0 +1,32 @@
+name: Build docs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+
+      - name: Build site
+        run: |
+          uv run --no-project \
+            --with mkdocs \
+            --with mkdocs-material \
+            --with mkdocs-jupyter \
+            --with pymdown-extensions \
+            mkdocs build --strict
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cpdw-vi-site
+          path: site/
+          retention-days: 30
+          if-no-files-found: error
