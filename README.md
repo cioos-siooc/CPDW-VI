@@ -14,10 +14,10 @@ locally).
 
 | Notebook | Open in Colab |
 | --- | --- |
-| `01_pyobis_quickstart.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/notebooks/01_pyobis_quickstart.ipynb) |
-| `02_obis_rest_api.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/notebooks/02_obis_rest_api.ipynb) |
-| `03_obis_parquet_duckdb.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/notebooks/03_obis_parquet_duckdb.ipynb) |
-| `04_obis_to_cioos_metadata.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/notebooks/04_obis_to_cioos_metadata.ipynb) |
+| `01_pyobis_quickstart.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/01_pyobis_quickstart.ipynb) |
+| `02_obis_rest_api.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/02_obis_rest_api.ipynb) |
+| `03_obis_parquet_duckdb.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/03_obis_parquet_duckdb.ipynb) |
+| `04_obis_to_cioos_metadata.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/04_obis_to_cioos_metadata.ipynb) |
 
 Notebook 04 uses `cioos-metadata-conversion`, which is not on PyPI — its
 setup cell installs it from
@@ -26,13 +26,17 @@ setup cell installs it from
 ## Layout
 
 ```
-obis-presentation/
+CPDW-VI/
 ├── pyproject.toml                 # uv-managed environment
-└── notebooks/
-    ├── 01_pyobis_quickstart.ipynb     # ~10 min — pyobis high-level client
-    ├── 02_obis_rest_api.ipynb         # ~10 min — raw REST + cursor pagination
-    ├── 03_obis_parquet_duckdb.ipynb   # ~15 min — S3 Parquet via DuckDB
-    └── 04_obis_to_cioos_metadata.ipynb # ~10 min — cioos-metadata-conversion
+├── mkdocs.yml                     # workshop site config
+└── docs/
+    ├── index.md                       # site landing page
+    ├── workshop/                      # overview / setup / dataset
+    └── notebooks/
+        ├── 01_pyobis_quickstart.ipynb     # ~10 min — pyobis high-level client
+        ├── 02_obis_rest_api.ipynb         # ~10 min — raw REST + cursor pagination
+        ├── 03_obis_parquet_duckdb.ipynb   # ~15 min — S3 Parquet via DuckDB
+        └── 04_obis_to_cioos_metadata.ipynb # ~10 min — cioos-metadata-conversion
 ```
 
 ## Setup
@@ -42,7 +46,7 @@ cd obis-presentation
 uv sync
 # Launch the kernel from this env in your existing Jupyter:
 uv run python -m ipykernel install --user --name obis-presentation --display-name "OBIS presentation"
-# Then open notebooks/ in JupyterLab / Notebook / VS Code and pick the
+# Then open docs/notebooks/ in JupyterLab / Notebook / VS Code and pick the
 # "OBIS presentation" kernel.
 ```
 

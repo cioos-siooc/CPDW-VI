@@ -1,0 +1,96 @@
+site_name: CPDW 2026 Workshop
+site_description: Workshop notebooks on retrieving OBIS data and integrating it with CIOOS pipelines.
+site_url: https://cioos-siooc.github.io/CPDW-VI/
+repo_url: https://github.com/cioos-siooc/CPDW-VI
+repo_name: cioos-siooc/CPDW-VI
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  logo: assets/cioos-logo.svg
+  favicon: assets/favicon.svg
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  font:
+    text: Open Sans
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - assets/cioos-theme.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cioos-siooc
+    - icon: fontawesome/solid/globe
+      link: https://cioos.ca
+  generator: false
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false
+      include_source: true
+      include_requirejs: true
+      ignore_h1_titles: true
+      theme: auto
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Workshop:
+      - Overview: workshop/overview.md
+      - Demo dataset: workshop/dataset.md
+      - Setup: workshop/setup.md
+  - Notebooks:
+      - Overview: notebooks/index.md
+      - 01 — pyobis quickstart: notebooks/01_pyobis_quickstart.ipynb
+      - 02 — OBIS REST API: notebooks/02_obis_rest_api.ipynb
+      - 03 — Parquet + DuckDB: notebooks/03_obis_parquet_duckdb.ipynb
+      - 04 — OBIS → CIOOS metadata: notebooks/04_obis_to_cioos_metadata.ipynb

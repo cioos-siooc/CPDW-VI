@@ -23,3 +23,7 @@ Thumbs.db
 
 # Slides — kept local for now
 slides/
+
+# mkdocs build output
+site/
+.cache/

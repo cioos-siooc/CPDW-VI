@@ -1,0 +1,72 @@
+/* CIOOS brand palette
+ * Deep ocean navy + teal accents, inspired by cioos.ca
+ */
+:root {
+  --cioos-primary: #52A79B;
+  --cioos-primary-light: #7BC1B7;
+  --cioos-primary-dark: #3D8076;
+  --cioos-accent: #2BC4B0;
+  --cioos-sand: #f4f1ea;
+}
+
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: var(--cioos-primary);
+  --md-primary-fg-color--light: var(--cioos-primary-light);
+  --md-primary-fg-color--dark: var(--cioos-primary-dark);
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color: var(--cioos-accent);
+  --md-accent-fg-color--transparent: rgba(82, 167, 155, 0.1);
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: rgba(255, 255, 255, 0.7);
+}
+
+[data-md-color-scheme="slate"][data-md-color-primary="custom"] {
+  --md-primary-fg-color: var(--cioos-primary-dark);
+  --md-typeset-a-color: var(--cioos-primary-light);
+}
+
+/* Bigger header logo */
+.md-header__button.md-logo {
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.4rem;
+  width: auto;
+}
+
+/* Colab badge alignment */
+.md-typeset img[alt="Open In Colab"] {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+}
+
+/* Nicer notebook cell borders */
+.jp-Cell {
+  border-left: 3px solid var(--cioos-primary) !important;
+  padding-left: 0.75rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* Hero panel for the home page */
+.cioos-hero {
+  background: linear-gradient(135deg, var(--cioos-primary-dark) 0%, var(--cioos-primary) 100%);
+  color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+.cioos-hero h1,
+.cioos-hero h2 {
+  color: #ffffff;
+  margin-top: 0;
+}
+.cioos-hero a {
+  color: #ffffff;
+  text-decoration: underline;
+}
