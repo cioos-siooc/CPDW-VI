@@ -89,9 +89,9 @@ transformation, validation, and publication across ocean data systems.
 
 | # | Presentation | Tool | Notebook |
 |---|---|---|---|
-| 01 | Transforming OBIS datasets for CIOOS discovery | `OBIS2CIOOS` | [01_obis2cioos.ipynb](notebooks/01_obis2cioos.ipynb) |
-| 02 | Programmatic publishing to OBIS via the IPT | `pyIPT` | [02_pyipt_publishing.ipynb](notebooks/02_pyipt_publishing.ipynb) |
-| 03 | Validating Darwin Core datasets before publication | `Pyobistools` | [03_pyobistools_validation.ipynb](notebooks/03_pyobistools_validation.ipynb) |
+| 01 | Transforming OBIS datasets for CIOOS discovery | `OBIS2CIOOS` | `01_obis2cioos.ipynb` *(coming soon)* |
+| 02 | Programmatic publishing to OBIS via the IPT | `pyIPT` | `02_pyipt_publishing.ipynb` *(coming soon)* |
+| 03 | Validating Darwin Core datasets before publication | `Pyobistools` | `03_pyobistools_validation.ipynb` *(coming soon)* |
 
 ### 01 — OBIS2CIOOS
 
