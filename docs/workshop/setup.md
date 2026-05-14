@@ -26,10 +26,3 @@ uv run python -m ipykernel install --user \
 
 Then open `docs/notebooks/` in JupyterLab / VS Code and pick the
 **OBIS presentation** kernel.
-
-!!! tip "cioos-metadata-conversion"
-    Notebook 04 uses `cioos-metadata-conversion`, which is not on PyPI. The
-    `pyproject.toml` wires it as a path install to
-    `../../cioos-metadata-conversion` (relative to this directory). Adjust if
-    your workspace layout differs. The Colab setup cell pulls it directly
-    from `github.com/cioos-siooc/cioos-metadata-conversion`.

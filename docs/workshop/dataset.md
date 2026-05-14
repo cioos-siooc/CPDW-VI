@@ -1,6 +1,6 @@
 # Demo dataset
 
-A single OBIS dataset UUID is reused across all four notebooks so attendees
+A single OBIS dataset UUID is reused across all three notebooks so attendees
 see the same data through each lens.
 
 ## Primary
@@ -21,9 +21,8 @@ is slow during the workshop.
 
 Reusing the same UUID lets attendees compare:
 
-- the high-level `pyobis` view (notebook 01),
-- the raw REST records (notebook 02),
-- the Parquet snapshot rows (notebook 03), and
-- the CIOOS metadata representation (notebook 04)
+- the raw REST records (notebook 01),
+- the Parquet snapshot rows (notebook 02), and
+- the WoRMS-resolved taxonomy for its top species (notebook 03)
 
 …of the **same underlying data**.

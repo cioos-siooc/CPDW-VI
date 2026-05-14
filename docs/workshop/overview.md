@@ -1,15 +1,16 @@
 # Workshop overview
 
 This workshop is part of the **CIOOS Pacific Data Workshop (CPDW) 2026**.
-It combines a short talk with four Jupyter notebooks that walk through the
-practical mechanics of getting OBIS data into a CIOOS-compatible form.
+It combines a short talk with three Jupyter notebooks, one per API: the OBIS
+REST service, the OBIS geoparquet exports on S3, and the WoRMS taxonomic
+backbone (`pyworms`).
 
 ## Format
 
 | Block | Content |
 |---|---|
 | Talk | Why OBIS, why CIOOS, where the integration points are |
-| Hands-on notebooks | Notebooks 01 → 04, run via Colab or locally |
+| Hands-on notebooks | Notebooks 01 → 03, run via Colab or locally |
 | Q&A | Discussion |
 
 ## Audience

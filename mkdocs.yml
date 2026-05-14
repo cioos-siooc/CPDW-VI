@@ -90,7 +90,6 @@ nav:
       - Setup: workshop/setup.md
   - Notebooks:
       - Overview: notebooks/index.md
-      - 01 — pyobis quickstart: notebooks/01_pyobis_quickstart.ipynb
-      - 02 — OBIS REST API: notebooks/02_obis_rest_api.ipynb
-      - 03 — Parquet + DuckDB: notebooks/03_obis_parquet_duckdb.ipynb
-      - 04 — OBIS → CIOOS metadata: notebooks/04_obis_to_cioos_metadata.ipynb
+      - 01 — OBIS REST API: notebooks/01_obis_rest_api.ipynb
+      - 02 — Parquet + DuckDB: notebooks/02_obis_parquet_duckdb.ipynb
+      - 03 — WoRMS + pyworms: notebooks/03_worms_pyworms.ipynb

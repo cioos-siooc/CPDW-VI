@@ -1,7 +1,9 @@
-# OBIS → CIOOS: Notebook Demos
+# OBIS / WoRMS: Notebook Demos
 
-Jupyter notebook examples (~45 min) on retrieving data from OBIS (Ocean
-Biodiversity Information System) and how those flows feed CIOOS pipelines.
+Three Jupyter notebooks on retrieving data from OBIS (Ocean Biodiversity
+Information System) — via the REST API and the geoparquet exports — and
+resolving the names to authoritative taxonomy via the World Register of
+Marine Species (WoRMS).
 
 ## Run in Google Colab
 
@@ -14,14 +16,9 @@ locally).
 
 | Notebook | Open in Colab |
 | --- | --- |
-| `01_pyobis_quickstart.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/01_pyobis_quickstart.ipynb) |
-| `02_obis_rest_api.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/02_obis_rest_api.ipynb) |
-| `03_obis_parquet_duckdb.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/03_obis_parquet_duckdb.ipynb) |
-| `04_obis_to_cioos_metadata.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/04_obis_to_cioos_metadata.ipynb) |
-
-Notebook 04 uses `cioos-metadata-conversion`, which is not on PyPI — its
-setup cell installs it from
-`github.com/cioos-siooc/cioos-metadata-conversion`.
+| `01_obis_rest_api.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/01_obis_rest_api.ipynb) |
+| `02_obis_parquet_duckdb.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/02_obis_parquet_duckdb.ipynb) |
+| `03_worms_pyworms.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/03_worms_pyworms.ipynb) |
 
 ## Layout
 
@@ -33,10 +30,9 @@ CPDW-VI/
     ├── index.md                       # site landing page
     ├── workshop/                      # overview / setup / dataset
     └── notebooks/
-        ├── 01_pyobis_quickstart.ipynb     # ~10 min — pyobis high-level client
-        ├── 02_obis_rest_api.ipynb         # ~10 min — raw REST + cursor pagination
-        ├── 03_obis_parquet_duckdb.ipynb   # ~15 min — S3 Parquet via DuckDB
-        └── 04_obis_to_cioos_metadata.ipynb # ~10 min — cioos-metadata-conversion
+        ├── 01_obis_rest_api.ipynb        # ~10 min — OBIS REST + cursor pagination
+        ├── 02_obis_parquet_duckdb.ipynb  # ~15 min — S3 Parquet via DuckDB
+        └── 03_worms_pyworms.ipynb        # ~15 min — WoRMS REST + pyworms
 ```
 
 ## Setup
@@ -50,18 +46,11 @@ uv run python -m ipykernel install --user --name obis-presentation --display-nam
 # "OBIS presentation" kernel.
 ```
 
-(If you prefer everything in one env, `uv add jupyterlab` will pull it in
-— note `cffconvert` from `cioos-metadata-conversion` clashes with recent
-`jupyterlab`, so you may need `uv add 'jupyterlab<4' notebook` or use a
-separate Jupyter env and the kernel install above.)
-
-The `cioos-metadata-conversion` dependency is wired as a path install to
-`../../cioos-metadata-conversion` (relative to this directory) — adjust
-`pyproject.toml` if your workspace layout differs.
+(If you prefer everything in one env, `uv add jupyterlab` will pull it in.)
 
 ## Demo dataset
 
-A single OBIS dataset UUID is reused across all four notebooks so attendees
+A single OBIS dataset UUID is reused across all three notebooks so attendees
 see the same data through each lens:
 
 - **Primary**: `d895e645-a98d-4720-b6fb-332929190f36` (Maritimes Spring RV Surveys —

@@ -44,7 +44,7 @@ transformation, validation, and publication across ocean data systems.
 
 | # | Presentation | Tool | Notebook |
 |---|---|---|---|
-| 01 | Transforming OBIS datasets for CIOOS discovery | `OBIS2CIOOS` | `01_obis2cioos.ipynb` *(coming soon)* |
+| 01 | Transforming OBIS datasets for CIOOS discovery | `OBIS2CIOOS` | [see notebooks ↓](#01-obis2cioos) |
 | 02 | Programmatic publishing to OBIS via the IPT | `pyIPT` | `02_pyipt_publishing.ipynb` *(coming soon)* |
 | 03 | Validating Darwin Core datasets before publication | `Pyobistools` | `03_pyobistools_validation.ipynb` *(coming soon)* |
 
@@ -52,7 +52,18 @@ transformation, validation, and publication across ocean data systems.
 
 A set of translation tools that transform OBIS datasets into formats suitable
 for discovery through the **Canadian Integrated Ocean Observing System
-(CIOOS)**.
+(CIOOS)**. The hands-on portion is split across three notebooks, one per
+API the OBIS2CIOOS pipeline depends on:
+
+- [**01 — OBIS REST API**](notebooks/01_obis_rest_api.ipynb) — `/v3/dataset`,
+  `/v3/occurrence`, `/v3/facet`; cursor pagination; the `country=` /
+  `geometry=` quirks.
+- [**02 — Parquet + DuckDB**](notebooks/02_obis_parquet_duckdb.ipynb) — the
+  [`iobis/obis-open-data`](https://github.com/iobis/obis-open-data) S3
+  exports queried directly with DuckDB.
+- [**03 — WoRMS + pyworms**](notebooks/03_worms_pyworms.ipynb) — resolving
+  `scientificName` strings to authoritative AphiaIDs and full classifications
+  via the [World Register of Marine Species](https://www.marinespecies.org/).
 
 ### 02 — pyIPT
 

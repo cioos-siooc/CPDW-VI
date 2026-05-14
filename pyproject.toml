@@ -1,28 +1,23 @@
 [project]
 name = "obis-presentation"
 version = "0.1.0"
-description = "15-min talk + 45-min Jupyter notebooks on retrieving OBIS data and how it feeds CIOOS pipelines."
+description = "Workshop notebooks on retrieving OBIS data via the REST API, geoparquet exports, and resolving names against WoRMS."
 requires-python = ">=3.11"
 readme = "README.md"
 dependencies = [
-    "pyobis>=1.6.1",
+    "pyworms>=0.3.0",
     "duckdb>=1.0.0",
     "requests>=2.32.0",
     "pandas>=2.2.0",
     "pyarrow>=15.0.0",
-    "folium>=0.16.0",
     "matplotlib>=3.8.0",
     "tqdm>=4.66.0",
     "ipykernel>=6.29.0",
     "ipywidgets>=8.1.0",
-    "cioos-metadata-conversion",
 ]
 
 [tool.uv]
 package = false
-
-[tool.uv.sources]
-cioos-metadata-conversion = { git = "https://github.com/cioos-siooc/cioos-metadata-conversion.git" }
 
 [dependency-groups]
 dev = [
