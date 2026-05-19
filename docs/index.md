@@ -55,6 +55,9 @@ for discovery through the **Canadian Integrated Ocean Observing System
 (CIOOS)**. The hands-on portion is split across three notebooks, one per
 API the OBIS2CIOOS pipeline depends on:
 
+[Download the slides (OBIS2CIOOS.pptx) →](presentations/OBIS2CIOOS.pptx){ .md-button }
+
+
 - [**01 — OBIS REST API**](notebooks/01_obis_rest_api.ipynb) — `/v3/dataset`,
   `/v3/occurrence`, `/v3/facet`; cursor pagination; the `country=` /
   `geometry=` quirks.
