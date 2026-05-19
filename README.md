@@ -1,24 +1,54 @@
-# OBIS / WoRMS: Notebook Demos
+# CPDW 2026 — OBIS Developer Workshop
 
-Three Jupyter notebooks on retrieving data from OBIS (Ocean Biodiversity
-Information System) — via the REST API and the geoparquet exports — and
-resolving the names to authoritative taxonomy via the World Register of
-Marine Species (WoRMS).
+**From Observations to Ocean Data Systems — developer workflows for OBIS
+access, validation, and publishing.**
+
+A developer-focused working session at the **CIOOS Pacific Data Workshop
+2026**: three short presentations, each paired with hands-on Jupyter
+notebooks, covering the practical mechanics of moving Darwin Core
+biodiversity data through the OBIS ecosystem.
+
+Workshop site: <https://cioos-siooc.github.io/CPDW-VI/>
+
+## The three presentations
+
+| # | Presentation | Tool | Focus |
+| --- | --- | --- | --- |
+| 01 | Transforming OBIS datasets for CIOOS discovery | `OBIS2CIOOS` | Pulling OBIS data and reshaping it for CIOOS metadata catalogues |
+| 02 | Programmatic publishing to OBIS via the IPT | `pyIPT` | Automating dataset publication through the Integrated Publishing Toolkit |
+| 03 | Validating Darwin Core datasets before publication | `Pyobistools` | QC and Darwin Core validation prior to publishing |
+
+Notebooks for 02 and 03 are still in progress; the OBIS2CIOOS block is the
+runnable one today.
 
 ## Run in Google Colab
 
 Each notebook has a Colab-aware setup cell at the top — run it first and it
-will `pip install` the deps on a fresh Colab runtime (and is a no-op when run
-locally).
+will `pip install` the deps on a fresh Colab runtime (and is a no-op when
+run locally).
 
 > **Note:** this repo is currently private. Colab badges only work for
 > users signed in to a GitHub account with access to `cioos-siooc/CPDW-VI`.
 
+### 01 — OBIS2CIOOS
+
 | Notebook | Open in Colab |
 | --- | --- |
-| `01_obis_rest_api.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/01_obis_rest_api.ipynb) |
-| `02_obis_parquet_duckdb.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/02_obis_parquet_duckdb.ipynb) |
-| `03_worms_pyworms.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/03_worms_pyworms.ipynb) |
+| `01_obis_rest_api.ipynb` — OBIS REST + cursor pagination | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/01_obis_rest_api.ipynb) |
+| `02_obis_parquet_duckdb.ipynb` — S3 Parquet via DuckDB | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/02_obis_parquet_duckdb.ipynb) |
+| `03_worms_pyworms.ipynb` — WoRMS REST + pyworms | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/03_worms_pyworms.ipynb) |
+
+Slides: [`docs/presentations/OBIS2CIOOS.pptx`](docs/presentations/OBIS2CIOOS.pptx)
+
+### 02 — pyIPT
+
+Programmatic dataset publishing to OBIS via the Integrated Publishing
+Toolkit (IPT) using standard web requests. *Notebook coming soon.*
+
+### 03 — Pyobistools
+
+Validation and quality control of Darwin Core datasets prior to
+publication. *Notebook coming soon.*
 
 ## Layout
 
@@ -29,6 +59,7 @@ CPDW-VI/
 └── docs/
     ├── index.md                       # site landing page
     ├── workshop/                      # overview / setup / dataset
+    ├── presentations/                 # slide decks (.pptx)
     └── notebooks/
         ├── 01_obis_rest_api.ipynb        # ~10 min — OBIS REST + cursor pagination
         ├── 02_obis_parquet_duckdb.ipynb  # ~15 min — S3 Parquet via DuckDB
@@ -50,10 +81,16 @@ uv run python -m ipykernel install --user --name obis-presentation --display-nam
 
 ## Demo dataset
 
-A single OBIS dataset UUID is reused across all three notebooks so attendees
-see the same data through each lens:
+A single OBIS dataset UUID is reused across the OBIS2CIOOS notebooks so
+attendees see the same data through each lens:
 
-- **Primary**: `d895e645-a98d-4720-b6fb-332929190f36` (Maritimes Spring RV Surveys —
-  rich eMoF + taxonomy)
+- **Primary**: `d895e645-a98d-4720-b6fb-332929190f36` (Maritimes Spring RV
+  Surveys — rich eMoF + taxonomy)
 - **Backup**: `4b5e4ccb-cf66-44e4-8890-fa68f8404c3f` (small dataset for
   quick API/parquet comparisons)
+
+## Hosts
+
+- **TBD** — Ocean Tracking Network
+- **TBD** — St. Lawrence Global Observatory
+- **Simon Beauvillier** and **Richard Kelly** — CIOOS Coordination Office
