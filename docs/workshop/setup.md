@@ -1,6 +1,8 @@
 # Setup
 
 You have two options: **Google Colab** (zero install) or **local with uv**.
+The same environment serves every notebook across the three presentations
+(OBIS2CIOOS, pyIPT, Pyobistools).
 
 ## Option A — Google Colab (recommended for the workshop)
 
