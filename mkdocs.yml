@@ -93,3 +93,4 @@ nav:
       - 01 — OBIS REST API: notebooks/01_obis_rest_api.ipynb
       - 02 — Parquet + DuckDB: notebooks/02_obis_parquet_duckdb.ipynb
       - 03 — WoRMS + pyworms: notebooks/03_worms_pyworms.ipynb
+      - 04 — Validate biodiversity data: notebooks/workshop_validate_biodiversity_data.ipynb

@@ -1,0 +1,11 @@
+eventID,measurementID,measurementType,measurementValue,measurementUnit
+STATION-001,MEAS-001,Water temperature,12.3,Celsius
+STATION-001,MEAS-002,Salinity,32.1,PSU
+STATION-001,MEAS-002,Depth,5.2,metres
+STATION-002,MEAS-003,Water temperature,11.8,Celsius
+STATION-002,MEAS-004,Salinity,31.9,PSU
+STATION-002,MEAS-004,Depth,3.7,metres
+STATION-003,MEAS-006,Water temperature,13.1,Celsius
+STATION-003,MEAS-007,Salinity,33.2,PSU
+STATION-003,MEAS-008,Depth,8.5,metres
+STATION-004,MEAS-009,Water temperature,10.5,Celsius

@@ -61,4 +61,12 @@ publication — required-term checks, vocabulary conformance, coordinate
 sanity, and surfacing the most common publishing-blockers before they
 reach the IPT.
 
-*Notebook coming soon.*
+### Validate biodiversity data
+
+Six validation functions from `pyobistools` — `check_fields`, `check_occurrence_core_and_extension`,
+`check_eventids`, `check_measurementids`, `check_scientificname_and_ids`, and `check_onland` —
+applied to synthetic Darwin Core datasets with intentional errors. Each block includes a task
+and a collapsible solution.
+
+[Open notebook](workshop_validate_biodiversity_data.ipynb){ .md-button .md-button--primary }
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/workshop_validate_biodiversity_data.ipynb)

@@ -1,0 +1,26 @@
+occurrenceID,eventDate,scientificName,decimalLatitude,decimalLongitude,basisOfRecord,occurrenceStatus
+WS-GEO-001,2024-06-01,Ficticia marina,47.20,-61.40,HumanObservation,present
+WS-GEO-002,2024-06-01,Imaginarius atlanticus,47.10,-62.30,HumanObservation,present
+WS-GEO-003,2024-06-01,Simulatus borealis,46.90,-63.70,HumanObservation,present
+WS-GEO-004,2024-06-02,Exemplaria pelagica,46.50,-64.90,HumanObservation,present
+WS-GEO-005,2024-06-02,Ficticia marina,-23.55,-46.63,HumanObservation,present
+WS-GEO-006,2024-06-02,Imaginarius atlanticus,45.70,-60.20,HumanObservation,present
+WS-GEO-007,2024-06-03,Simulatus borealis,45.00,-63.60,HumanObservation,present
+WS-GEO-008,2024-06-03,Exemplaria pelagica,45.20,-64.10,HumanObservation,present
+WS-GEO-009,2024-06-03,Ficticia marina,44.60,-62.50,HumanObservation,present
+WS-GEO-010,2024-06-04,Imaginarius atlanticus,43.90,-59.80,HumanObservation,present
+WS-GEO-011,2024-06-04,Simulatus borealis,44.20,-61.30,HumanObservation,present
+WS-GEO-012,2024-06-04,Exemplaria pelagica,43.50,-60.90,HumanObservation,present
+WS-GEO-013,2024-06-05,Ficticia marina,41.88,-87.63,HumanObservation,present
+WS-GEO-014,2024-06-05,Imaginarius atlanticus,44.70,-65.30,HumanObservation,present
+WS-GEO-015,2024-06-05,Simulatus borealis,45.10,-66.10,HumanObservation,present
+WS-GEO-016,2024-06-06,Exemplaria pelagica,46.40,-60.80,HumanObservation,present
+WS-GEO-017,2024-06-06,Ficticia marina,47.50,-61.20,HumanObservation,present
+WS-GEO-018,2024-06-06,Imaginarius atlanticus,46.10,-62.60,HumanObservation,present
+WS-GEO-019,2024-06-07,Simulatus borealis,45.90,-63.40,HumanObservation,present
+WS-GEO-020,2024-06-07,Exemplaria pelagica,19.43,-99.13,HumanObservation,present
+WS-GEO-021,2024-06-07,Ficticia marina,44.40,-64.70,HumanObservation,present
+WS-GEO-022,2024-06-08,Imaginarius atlanticus,43.80,-61.20,HumanObservation,present
+WS-GEO-023,2024-06-08,Simulatus borealis,45.30,-59.50,HumanObservation,present
+WS-GEO-024,2024-06-08,Exemplaria pelagica,46.80,-60.30,HumanObservation,present
+WS-GEO-025,2024-06-08,Ficticia marina,47.10,-64.60,HumanObservation,present
