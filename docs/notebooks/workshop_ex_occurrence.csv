@@ -1,0 +1,16 @@
+occurrenceID,eventDate,decimalLatitude,decimalLongitude,scientificname,occurrenceStatus,basisOfRecord,scientificNameID,CoordinateUncertaintyInMeters
+WS-OCC-001,2024-06-01,45.10,-64.20,Ficticia marina,present,HumanObservation,urn:lsid:marinespecies.org:taxname:99001,50
+WS-OCC-001,2024-06-01,45.10,-64.20,Imaginarius atlanticus,present,HumanObservation,urn:lsid:marinespecies.org:taxname:99002,50
+WS-OCC-002,2024-06-01,45.40,-63.80,Simulatus borealis,present,HumanObservation,,50
+WS-OCC-003,2024-06-02,45.60,-63.50,Exemplaria pelagica,present,HumanObservation,urn:lsid:marinespecies.org:taxname:99004,50
+WS-OCC-004,2024-06-02,46.00,-62.90,Ficticia marina,present,HumanObservation,urn:lsid:marinespecies.org:taxname:99001,50
+WS-OCC-005,2024-06-02,46.20,-62.50,Imaginarius atlanticus,present,FieldObservation,urn:lsid:marinespecies.org:taxname:99002,50
+WS-OCC-006,2024-06-03,46.50,-62.00,Simulatus borealis,present,HumanObservation,,50
+WS-OCC-007,2024-06-03,46.70,-61.60,Exemplaria pelagica,present,HumanObservation,urn:lsid:marinespecies.org:taxname:99004,50
+WS-OCC-008,2024-06-03,47.00,-61.10,Ficticia marina,presence,HumanObservation,urn:lsid:marinespecies.org:taxname:99001,50
+WS-OCC-009,2024-06-04,47.20,-60.70,Imaginarius atlanticus,present,HumanObservation,urn:lsid:marinespecies.org:taxname:99002,50
+WS-OCC-010,2024-06-04,47.40,-60.30,Simulatus borealis,present,HumanObservation,urn:lsid:marinespecies.org:taxname:99003,50
+WS-OCC-011,2024-06-04,47.60,-59.90,Exemplaria pelagica,present,Humanobservation,,50
+WS-OCC-012,2024-06-05,47.80,-59.50,Ficticia marina,absent,HumanObservation,urn:lsid:marinespecies.org:taxname:99001,50
+WS-OCC-013,2024-06-05,47.90,-59.20,Imaginarius atlanticus,present,HumanObservation,urn:lsid:marinespecies.org:taxname:99002,50
+WS-OCC-014,2024-06-05,48.00,-58.90,Simulatus borealis,present,HumanObservation,urn:lsid:marinespecies.org:taxname:99003,50
