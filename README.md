@@ -18,8 +18,8 @@ Workshop site: <https://cioos-siooc.github.io/CPDW-VI/>
 | 02 | Programmatic publishing to OBIS via the IPT | `pyIPT` | Automating dataset publication through the Integrated Publishing Toolkit |
 | 03 | Validating Darwin Core datasets before publication | `Pyobistools` | QC and Darwin Core validation prior to publishing |
 
-Notebooks for 02 and 03 are still in progress; the OBIS2CIOOS block is the
-runnable one today.
+OBIS2CIOOS (01) and Pyobistools (03) are runnable today; the pyIPT
+notebook (02) is still in progress.
 
 ## Run in Google Colab
 
@@ -47,8 +47,15 @@ Toolkit (IPT) using standard web requests. *Notebook coming soon.*
 
 ### 03 — Pyobistools
 
-Validation and quality control of Darwin Core datasets prior to
-publication. *Notebook coming soon.*
+| Notebook | Open in Colab |
+| --- | --- |
+| `workshop_validate_biodiversity_data.ipynb` — Darwin Core validation with `pyobistools` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cioos-siooc/CPDW-VI/blob/main/docs/notebooks/workshop_validate_biodiversity_data.ipynb) |
+
+Six validation functions — `check_fields`,
+`check_occurrence_core_and_extension`, `check_eventids`,
+`check_measurementids`, `check_scientificname_and_ids`, and `check_onland`
+— applied to synthetic Darwin Core datasets with intentional errors. Each
+block pairs a task with a collapsible solution.
 
 ## Layout
 
@@ -61,9 +68,11 @@ CPDW-VI/
     ├── workshop/                      # overview / setup / dataset
     ├── presentations/                 # slide decks (.pptx)
     └── notebooks/
-        ├── 01_obis_rest_api.ipynb        # ~10 min — OBIS REST + cursor pagination
-        ├── 02_obis_parquet_duckdb.ipynb  # ~15 min — S3 Parquet via DuckDB
-        └── 03_worms_pyworms.ipynb        # ~15 min — WoRMS REST + pyworms
+        ├── 01_obis_rest_api.ipynb                     # OBIS REST + cursor pagination
+        ├── 02_obis_parquet_duckdb.ipynb               # S3 Parquet via DuckDB
+        ├── 03_worms_pyworms.ipynb                     # WoRMS REST + pyworms
+        ├── workshop_validate_biodiversity_data.ipynb  # Darwin Core validation (pyobistools)
+        └── workshop_ex_*.csv                          # synthetic DwC sample data
 ```
 
 ## Setup
