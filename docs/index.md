@@ -44,8 +44,8 @@ transformation, validation, and publication across ocean data systems.
 | # | Presentation | Tool | Notebook |
 |---|---|---|---|
 | 01 | Transforming OBIS datasets for CIOOS discovery | `OBIS2CIOOS` | [see notebooks ↓](#01-obis2cioos) |
-| 02 | Programmatic publishing to OBIS via the IPT | `pyIPT` | `02_pyipt_publishing.ipynb` *(coming soon)* |
-| 03 | Validating Darwin Core datasets before publication | `Pyobistools` | `03_pyobistools_validation.ipynb` *(coming soon)* |
+| 02 | Programmatic publishing to OBIS via the IPT | `pyIPT` | *(coming soon)* |
+| 03 | Validating Darwin Core datasets before publication | `Pyobistools` | [Validate biodiversity data](notebooks/workshop_validate_biodiversity_data.ipynb) |
 
 ### 01 — OBIS2CIOOS
 
@@ -76,6 +76,10 @@ A Python module that enables programmatic dataset publishing to OBIS via the
 
 A Python toolkit supporting **validation and quality control** of Darwin
 Core datasets prior to publication.
+
+[Download the slides (CPDW_Pyobistools_CIOOS.pptx) →](presentations/CPDW_Pyobistools_CIOOS.pptx){ .md-button }
+
+- [**Validate biodiversity data**](notebooks/workshop_validate_biodiversity_data.ipynb) — `check_fields`, `check_occurrence_core_and_extension`, `check_eventids`, `check_measurementids`, `check_scientificname_and_ids`, and `check_onland` applied to synthetic Darwin Core datasets with intentional errors.
 
 ## Hosts
 
