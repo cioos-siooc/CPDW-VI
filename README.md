@@ -57,6 +57,8 @@ Six validation functions — `check_fields`,
 — applied to synthetic Darwin Core datasets with intentional errors. Each
 block pairs a task with a collapsible solution.
 
+Slides: [`docs/presentations/CPDW_Pyobistools_CIOOS.pptx`](docs/presentations/CPDW_Pyobistools_CIOOS.pptx)
+
 ## Layout
 
 ```
